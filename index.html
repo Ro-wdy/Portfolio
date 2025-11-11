@@ -1873,13 +1873,7 @@
                   non nisi. Vestibulum ante ipsum primis.
                 </p>
 
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  class="php-email-form"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
+                <form id="contact-form" class="php-email-form">
                   <div class="row gy-4">
                     <div class="col-md-6">
                       <input
@@ -1887,37 +1881,37 @@
                         name="name"
                         class="form-control"
                         placeholder="Your Name"
-                        required=""
+                        required
                       />
                     </div>
 
                     <div class="col-md-6">
                       <input
                         type="email"
-                        class="form-control"
                         name="email"
+                        class="form-control"
                         placeholder="Your Email"
-                        required=""
+                        required
                       />
                     </div>
 
                     <div class="col-12">
                       <input
                         type="text"
-                        class="form-control"
                         name="subject"
+                        class="form-control"
                         placeholder="Subject"
-                        required=""
+                        required
                       />
                     </div>
 
                     <div class="col-12">
                       <textarea
-                        class="form-control"
                         name="message"
+                        class="form-control"
                         rows="6"
                         placeholder="Message"
-                        required=""
+                        required
                       ></textarea>
                     </div>
 
@@ -1991,5 +1985,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
 </html>
