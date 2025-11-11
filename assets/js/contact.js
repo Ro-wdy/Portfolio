@@ -1,7 +1,7 @@
 // Contact form functionality with EmailJS
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize EmailJS with your public key
-  emailjs.init("");
+  emailjs.init("xj0gTe5gYm39W8c2J");
 
   const contactForm = document.getElementById("contact-form");
   const formMessage = document.querySelector(".sent-message");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Send the email
     emailjs
-      .send("service_ID", "template_ID", templateParams)
+      .send("service_3wb0jbj", "template_x2aubsh", templateParams)
       .then(() => {
         console.log("SUCCESS! Message sent.");
         loading.style.display = "none";
